@@ -49,3 +49,6 @@ class progressBar:
         else:
             bar = bar + f"{self.barEnd}{self.spaceFill*round(filled)}{self.spaceBlank*round(empty)}{self.barEnd}{round(self.currStep/self.steps*100.0,2)}%"
         return bar
+    
+    if __name__ == "__main__":
+        raise Exception("Class can not be run as main. This class must be imported!")
